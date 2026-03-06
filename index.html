@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romano's | Intelligence & Urban Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #002d54;
+            --accent-cyan: #20b2aa;
+            --light-gray: #f4f7f6;
+            --dark-gray: #2d3436;
+            --white: #ffffff;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.7;
+        }
+
+        /* --- Header Elegante --- */
+        header {
+            background: var(--white);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .logo img { height: 70px; transition: var(--transition); }
+        .logo img:hover { transform: scale(1.05); }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2.5rem; }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        nav ul li a:hover { color: var(--accent-cyan); }
+
+        /* --- Hero --- */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 45, 84, 0.9), rgba(32, 178, 170, 0.7)), 
+                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 5%;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 4rem; font-weight: 900; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin: auto; }
+
+        /* --- Main Blog Grid --- */
+        main { padding: 5rem 5%; max-width: 1400px; margin: auto; }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .post-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eee;
+        }
+
+        .post-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        .post-img {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .post-content { padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; }
+
+        .category {
+            color: var(--accent-cyan);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .post-content h2 { font-size: 1.5rem; color: var(--primary-blue); margin-bottom: 1rem; line-height: 1.3; }
+        .post-content p { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; }
+
+        .read-more {
+            margin-top: auto;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+        .read-more:hover { color: var(--accent-cyan); }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 5rem 5%;
+            margin-top: 5rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .footer-col h4 { margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.9rem; color: var(--accent-cyan); }
+        .footer-col p, .footer-col li { font-size: 0.85rem; color: #cbd5e0; list-style: none; margin-bottom: 10px; }
+
+        /* --- Responsive --- */
+        @media (max-width: 900px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { flex-direction: column; text-align: center; }
+            nav ul { margin-top: 1.5rem; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://i.ibb.co/XxtLKSxD/Gemini-Generated-Image-iqp46siqp46siqp4-removebg-preview.png" alt="Romano's Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Marketing Science</a></li>
+            <li><a href="#">Cultura Sneaker</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Insights & Footwear</h1>
+    <p>Donde la ciencia de datos se encuentra con el estilo urbano. El blog oficial para profesionales y entusiastas del calzado.</p>
+</section>
+
+<main>
+    <h2 class="section-title">Publicaciones Recientes</h2>
+    
+    <div class="blog-grid">
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Data Analysis</span>
+                <h2>Predicción de Tendencias mediante Big Data</h2>
+                <p>¿Cómo utilizamos los algoritmos para anticipar qué silueta será la más buscada en el próximo semestre? Un análisis profundo del comportamiento del consumidor.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Estrategia</span>
+                <h2>Marketing Mix en el Retail Moderno</h2>
+                <p>Redefiniendo las 4 Ps para el mercado de Quevedo. Cómo Romano's adapta su oferta de valor a las necesidades locales dinámicas.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images-cdn.ubuy.com.es/64814c1f4992b0202d56f82d-de-hombre-zapatos-deportivos-para-con.jpg');"></div>
+            <div class="post-content">
+                <span class="category">IA Generativa</span>
+                <h2>IA en el Diseño de Experiencia de Usuario</h2>
+                <p>Desde prompts de optimización hasta visualización de productos. Cómo la inteligencia artificial está revolucionando nuestro flujo de trabajo.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Logística</span>
+                <h2>Optimización de Suministros: De Qatar a Ecuador</h2>
+                <p>Aplicando metodologías de exportación a nuestra cadena de suministro local para garantizar disponibilidad inmediata de modelos premium.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://m.media-amazon.com/images/I/51qPbhSwXJS._AC_UF894,1000_QL80_.jpg');"></div>
+            <div class="post-content">
+                <span class="category">Branding</span>
+                <h2>Evolución de la Identidad Visual de Romano's</h2>
+                <p>Un recorrido por el proceso de rediseño: de un logo convencional a una marca que respira movimiento y curación experta.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Econometría</span>
+                <h2>Modelado de Churn en el Segmento Sneaker</h2>
+                <p>Análisis estadístico para entender la lealtad de marca y cómo reducir el abandono mediante estrategias de retención personalizadas.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Comunidad</span>
+                <h2>Vinculación Social: Calzando el Talento Local</h2>
+                <p>Nuestra participación en proyectos comunitarios en Quevedo y cómo el calzado deportivo fomenta el desarrollo juvenil.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-1732073046-1-6543b618783e2.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1120:*');"></div>
+            <div class="post-content">
+                <span class="category">Product Review</span>
+                <h2>Trail Master X1: Análisis Técnico</h2>
+                <p>Desglosamos cada componente de nuestra zapatilla estrella: desde la malla transpirable hasta la amortiguación reactiva.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=800');"></div>
+            <div class="post-content">
+                <span class="category">Futuro</span>
+                <h2>Sostenibilidad y el Mercado de Calzado</h2>
+                <p>¿Es posible un modelo de negocio de calzado 100% circular? Investigamos las nuevas tendencias en materiales eco-friendly.</p>
+                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Romano's Footwear</h4>
+            <p>Líderes en curación de calzado urbano y deportivo con un enfoque basado en datos y estrategia de marketing.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li>Catálogo de Productos</li>
+                <li>Blog de Marketing</li>
+                <li>Casos de Estudio</li>
+                <li>Sobre Nosotros</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>Quevedo Shopping Center, Planta Baja.</p>
+            <p>marketing@romanos.com</p>
+        </div>
+    </div>
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; font-size: 0.75rem; color: #718096;">
+        &copy; 2026 Romano's.
+    </div>
+</footer>
+
+<script>
+    // Efecto de aparición suave de los posts
+    const cards = document.querySelectorAll('.post-card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'all 0.6s ease-out';
+        observer.observe(card);
+    });
+</script>
+
+</body>
+</html>
