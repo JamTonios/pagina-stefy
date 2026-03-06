@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romano's | Intelligence & Urban Style</title>
+    <title>Romano's | Estilo Urbano & Calzado</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -24,7 +24,7 @@
             line-height: 1.7;
         }
 
-        /* --- Header Elegante --- */
+        /* --- Header --- */
         header {
             background: var(--white);
             padding: 1.5rem 5%;
@@ -55,19 +55,19 @@
 
         /* --- Hero --- */
         .hero {
-            background: linear-gradient(135deg, rgba(0, 45, 84, 0.9), rgba(32, 178, 170, 0.7)), 
-                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2000&auto=format&fit=crop');
+            background: linear-gradient(135deg, rgba(0, 45, 84, 0.85), rgba(32, 178, 170, 0.6)), 
+                        url('https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             color: var(--white);
-            padding: 120px 5%;
+            padding: 100px 5%;
             text-align: center;
         }
 
-        .hero h1 { font-size: 4rem; font-weight: 900; margin-bottom: 1rem; }
+        .hero h1 { font-size: 3.5rem; font-weight: 900; margin-bottom: 1rem; }
         .hero p { font-size: 1.2rem; font-weight: 300; max-width: 700px; margin: auto; }
 
-        /* --- Main Blog Grid --- */
+        /* --- Blog Grid --- */
         main { padding: 5rem 5%; max-width: 1400px; margin: auto; }
         
         .section-title {
@@ -96,12 +96,7 @@
 
         .post-card:hover { transform: translateY(-15px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
 
-        .post-img {
-            height: 240px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
+        .post-img { height: 240px; background-size: cover; background-position: center; }
 
         .post-content { padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; }
 
@@ -127,9 +122,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            transition: var(--transition);
         }
-        .read-more:hover { color: var(--accent-cyan); }
 
         /* --- Footer --- */
         footer {
@@ -145,18 +138,15 @@
             gap: 3rem;
             max-width: 1200px;
             margin: auto;
-            text-align: left;
         }
 
-        .footer-col h4 { margin-bottom: 1.5rem; text-transform: uppercase; font-size: 0.9rem; color: var(--accent-cyan); }
-        .footer-col p, .footer-col li { font-size: 0.85rem; color: #cbd5e0; list-style: none; margin-bottom: 10px; }
+        .footer-col h4 { margin-bottom: 1.5rem; color: var(--accent-cyan); }
+        .footer-col p { font-size: 0.85rem; color: #cbd5e0; }
 
-        /* --- Responsive --- */
         @media (max-width: 900px) {
             .hero h1 { font-size: 2.5rem; }
-            header { flex-direction: column; text-align: center; }
+            header { flex-direction: column; }
             nav ul { margin-top: 1.5rem; }
-            nav ul li { margin: 0 10px; }
         }
     </style>
 </head>
@@ -168,109 +158,110 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Cuidado</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>Insights & Footwear</h1>
-    <p>El blog oficial para profesionales y entusiastas del calzado.</p>
+    <h1>Pasión por el Calzado</h1>
+    <p>Descubre las últimas tendencias, guías de estilo y el mantenimiento que tus zapatillas favoritas merecen.</p>
 </section>
 
 <main>
-    <h2 class="section-title">Publicaciones Recientes</h2>
+    <h2 class="section-title">Lo Último en Romano's</h2>
     
     <div class="blog-grid">
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Data Analysis</span>
-                <h2>Predicción de Tendencias mediante Big Data</h2>
-                <p>¿Cómo utilizamos los algoritmos para anticipar qué silueta será la más buscada en el próximo semestre? Un análisis profundo del comportamiento del consumidor.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Tendencias</span>
+                <h2>Sneakers: Los Imprescindibles del Verano</h2>
+                <p>Las siluetas que están dominando el estilo urbano esta temporada. Colores vivos y materiales ligeros para el día a día.</p>
+                <a href="#" class="read-more">Ver Guía &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Estrategia</span>
-                <h2>Marketing Mix en el Retail Moderno</h2>
-                <p>Redefiniendo las 4 Ps para el mercado de Quevedo. Cómo Romano's adapta su oferta de valor a las necesidades locales dinámicas.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Guía de Compra</span>
+                <h2>Cómo elegir la talla perfecta online</h2>
+                <p>Evita devoluciones con nuestra guía definitiva para medir tu pie y entender las diferencias entre marcas como Vans y Nike.</p>
+                <a href="#" class="read-more">Leer Más &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images-cdn.ubuy.com.es/64814c1f4992b0202d56f82d-de-hombre-zapatos-deportivos-para-con.jpg');"></div>
             <div class="post-content">
-                <span class="category">IA Generativa</span>
-                <h2>IA en el Diseño de Experiencia de Usuario</h2>
-                <p>Desde prompts de optimización hasta visualización de productos. Cómo la inteligencia artificial está revolucionando nuestro flujo de trabajo.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Diseño</span>
+                <h2>El futuro del calzado ergonómico</h2>
+                <p>Nuevas suelas que absorben el impacto. Comodidad y soporte sin sacrificar el estilo que te caracteriza.</p>
+                <a href="#" class="read-more">Ver Detalles &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Logística</span>
-                <h2>Optimización de Suministros: De Qatar a Ecuador</h2>
-                <p>Aplicando metodologías de exportación a nuestra cadena de suministro local para garantizar disponibilidad inmediata de modelos premium.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Cuidado</span>
+                <h2>Guía de limpieza: Calzado de Cuero</h2>
+                <p>Mantén tus zapatillas como nuevas. Trucos sencillos para eliminar manchas y proteger el material contra la humedad.</p>
+                <a href="#" class="read-more">Ver Trucos &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://m.media-amazon.com/images/I/51qPbhSwXJS._AC_UF894,1000_QL80_.jpg');"></div>
             <div class="post-content">
-                <span class="category">Branding</span>
-                <h2>Evolución de la Identidad Visual de Romano's</h2>
-                <p>Un recorrido por el proceso de rediseño: de un logo convencional a una marca que respira movimiento y curación experta.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Lanzamientos</span>
+                <h2>Ediciones Limitadas: ¿Qué esperar?</h2>
+                <p>Un vistazo a los próximos drops exclusivos que llegarán a nuestras estanterías en Romano's.</p>
+                <a href="#" class="read-more">Ver Calendario &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Econometría</span>
-                <h2>Modelado de Churn en el Segmento Sneaker</h2>
-                <p>Análisis estadístico para entender la lealtad de marca y cómo reducir el abandono mediante estrategias de retención personalizadas.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Deporte</span>
+                <h2>Running vs. Caminata Diaria</h2>
+                <p>Descubre qué tipo de amortiguación necesitas según tu actividad física para evitar lesiones y mejorar el confort.</p>
+                <a href="#" class="read-more">Comparar &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Comunidad</span>
-                <h2>Vinculación Social: Calzando el Talento Local</h2>
-                <p>Nuestra participación en proyectos comunitarios en Quevedo y cómo el calzado deportivo fomenta el desarrollo juvenil.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Estilo</span>
+                <h2>Cómo combinar Sneakers y Ropa Formal</h2>
+                <p>Rompe las reglas. Consejos para llevar calzado deportivo con trajes o vestidos sin perder la elegancia.</p>
+                <a href="#" class="read-more">Ver Outfits &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-1732073046-1-6543b618783e2.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1120:*');"></div>
             <div class="post-content">
-                <span class="category">Product Review</span>
-                <h2>Trail Master X1: Análisis Técnico</h2>
-                <p>Desglosamos cada componente de nuestra zapatilla estrella: desde la malla transpirable hasta la amortiguación reactiva.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Técnico</span>
+                <h2>Trail Master X1: Rendimiento en Terreno</h2>
+                <p>Análisis a fondo de la tracción y resistencia de nuestro modelo estrella para aventuras al aire libre.</p>
+                <a href="#" class="read-more">Análisis Completo &rarr;</a>
             </div>
         </article>
 
         <article class="post-card">
             <div class="post-img" style="background-image: url('https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=800');"></div>
             <div class="post-content">
-                <span class="category">Futuro</span>
-                <h2>Sostenibilidad y el Mercado de Calzado</h2>
-                <p>¿Es posible un modelo de negocio de calzado 100% circular? Investigamos las nuevas tendencias en materiales eco-friendly.</p>
-                <a href="#" class="read-more">Leer Artículo &rarr;</a>
+                <span class="category">Materiales</span>
+                <h2>Zapatillas Eco-Friendly: Nueva Era</h2>
+                <p>Conoce los materiales reciclados que marcas líderes están integrando para un calzado más responsable.</p>
+                <a href="#" class="read-more">Ver Materiales &rarr;</a>
             </div>
         </article>
     </div>
@@ -280,49 +271,24 @@
     <div class="footer-grid">
         <div class="footer-col">
             <h4>Romano's Footwear</h4>
-            <p>Líderes en curación de calzado urbano y deportivo con un enfoque basado en datos y estrategia de marketing.</p>
+            <p>Especialistas en calzado urbano, deportivo y de trail. Calidad y estilo en cada paso.</p>
         </div>
         <div class="footer-col">
-            <h4>Navegación</h4>
-            <ul>
-                <li>Catálogo de Productos</li>
-                <li>Blog de Marketing</li>
-                <li>Casos de Estudio</li>
-                <li>Sobre Nosotros</li>
-            </ul>
+            <h4>Secciones</h4>
+            <p>Guía de Tallas</p>
+            <p>Cuidado de Calzado</p>
+            <p>Preguntas Frecuentes</p>
         </div>
         <div class="footer-col">
-            <h4>Contacto</h4>
-            <p>Quevedo Shopping Center, Planta Baja.</p>
+            <h4>Ubicación</h4>
+            <p>Quevedo Shopping Center, Quevedo - Ecuador.</p>
             <p>marketing@romanos.com</p>
         </div>
     </div>
-    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; font-size: 0.75rem; color: #718096;">
-        &copy; 2026 Romano's.
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; font-size: 0.75rem;">
+        &copy; 2026 Romano's Footwear.
     </div>
 </footer>
 
-<script>
-    // Efecto de aparición suave de los posts
-    const cards = document.querySelectorAll('.post-card');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
-
-    cards.forEach(card => {
-        card.style.opacity = 0;
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = 'all 0.6s ease-out';
-        observer.observe(card);
-    });
-</script>
-
 </body>
-
 </html>
-
